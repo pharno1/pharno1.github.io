@@ -82,7 +82,7 @@
 <header>
     <h1>Christophe DOSSA</h1>
     <p>Data Analyst | BI & Performance | SQL • Python • Cloud</p>
-    <a class="button" href="#">Télécharger mon CV</a>
+    <a class="button" href="DOSSA_Christophe_Data_Analyst.pdf">Télécharger mon CV</a>
 </header>
 
 <section id="about">
