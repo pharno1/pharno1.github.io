@@ -120,7 +120,7 @@
     <div class="card">
         <p>Email : aimechristophedossa@gmail.com</p>
         <p>
-            LinkedIn : <a href="www.linkedin.com/in/aimé-christophe-dossa" target="_blank">Ajouter ton lien</a><br>
+            LinkedIn : <a href="https://www.linkedin.com/in/aimé-christophe-dossa" target="_blank">Ajouter ton lien</a><br>
             GitHub : <a href="https://github.com/pharno1" target="_blank">github.com/pharno1</a>
         </p>
     </div>
