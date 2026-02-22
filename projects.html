@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets - Christophe DOSSA</title>
+
+  <style>
+    :root{
+      --bg:#f4f6f9;
+      --ink:#111827;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --nav:#111827;
+      --primary:#2563eb;
+      --shadow: 0 8px 20px rgba(0,0,0,0.06);
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height:1.6;
+    }
+
+    nav{
+      position: sticky;
+      top:0;
+      z-index:10;
+      background: var(--nav);
+      padding: 14px 16px;
+      text-align:center;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin: 0 14px;
+      font-weight:700;
+      opacity:0.95;
+    }
+    nav a:hover{ opacity:1; text-decoration:underline; }
+
+    header{
+      padding: 42px 18px 22px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 18px 24px;
+    }
+
+    .card{
+      background: var(--card);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+
+    h1{ margin: 0 0 6px 0; font-size: 30px; }
+    p{ margin-top: 0; }
+    .muted{ color: var(--muted); }
+
+    .badge{
+      display:inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #1e3a8a;
+      font-size: 13px;
+      font-weight: 700;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 820px){
+      .grid-2{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .btn{
+      display:inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration:none;
+      font-weight: 800;
+      background: var(--primary);
+      color:#fff;
+      margin-right: 10px;
+    }
+    .btn:hover{ opacity:0.95; }
+
+    .btn-ghost{
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid rgba(37,99,235,0.35);
+    }
+
+    .list{
+      padding-left: 18px;
+      margin: 0;
+    }
+    .list li{ margin: 6px 0; }
+
+    .callout{
+      border-left: 4px solid var(--primary);
+      padding: 10px 12px;
+      background: #f8fafc;
+      border-radius: 10px;
+    }
+
+    footer{
+      text-align:center;
+      padding: 18px 10px 26px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .anchor-title{
+      display:flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .smalllink{
+      color: var(--primary);
+      text-decoration:none;
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .smalllink:hover{ text-decoration:underline; }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">← Accueil</a>
+    <a href="#p1">Retail BI</a>
+    <a href="#p2">API → Cube BI</a>
+    <a href="#p3">Python</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Projets</h1>
+    <p class="muted">Des projets orientés impact métier : reporting, automatisation et analyse de données.</p>
+
+    <a class="btn" href="./DOSSA_Christophe_Data_Analyst.pdf" target="_blank" rel="noopener">📄 CV (PDF)</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/aime-christophe-dossa/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+  </header>
+
+  <main>
+
+    <!-- PROJET 1 -->
+    <section id="p1" class="card">
+      <div class="anchor-title">
+        <h2 style="margin:0;">Projet 1 — Dashboard Performance Retail (300+ magasins)</h2>
+        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+      </div>
+
+      <p class="muted">Power BI • KPI • Analyse ventes • Reporting quotidien</p>
+
+      <div>
+        <span class="badge">BI / Reporting</span>
+        <span class="badge">Retail</span>
+        <span class="badge">Pilotage performance</span>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px;">
+        <div>
+          <h3 style="margin:0 0 6px 0;">Contexte</h3>
+          <p>
+            Suivi quotidien de la performance commerciale d’un réseau national de 300+ magasins.
+            Besoin d’un pilotage clair et homogène pour les équipes métiers (vente / direction / contrôle de gestion).
+          </p>
+
+          <h3 style="margin:14px 0 6px 0;">Problématique</h3>
+          <p>
+            Centraliser les KPI (CA, commandes, trafic, panier moyen, taux de conversion, etc.)
+            et fournir des dashboards lisibles, actionnables et fiables.
+          </p>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 6px 0;">Approche</h3>
+          <ul class="list">
+            <li>Définition des KPI et règles de calcul (alignement métier)</li>
+            <li>Modélisation et consolidation des données (SQL / fichiers)</li>
+            <li>Création de vues Power BI : tendances, comparaison N / N-1, analyses par magasin</li>
+            <li>Mise en place d’un reporting récurrent et industrialisable</li>
+          </ul>
+
+          <h3 style="margin:14px 0 6px 0;">Outils</h3>
+          <p class="muted" style="margin-bottom:0;">
+            Power BI • SQL (PostgreSQL/MySQL) • Excel (TCD/VBA) • Looker Studio
+          </p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:16px;">
+        <b>Résultat attendu (à personnaliser)</b> : amélioration de la visibilité des ventes, réduction du temps de reporting,
+        meilleure réactivité des équipes sur les écarts de performance.
+      </div>
+
+      <p class="muted" style="margin-top:12px; margin-bottom:0;">
+        ✅ À ajouter : une capture Power BI (upload image dans le repo) + 2–3 KPI clés affichés.
+      </p>
+    </section>
+
+    <!-- PROJET 2 -->
+    <section id="p2" class="card">
+      <div class="anchor-title">
+        <h2 style="margin:0;">Projet 2 — Automatisation API → Cube BI (Achats fleurs)</h2>
+        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+      </div>
+
+      <p class="muted">API • ETL/ELT • AWS • Sage BI • Data quality</p>
+
+      <div>
+        <span class="badge">Automatisation</span>
+        <span class="badge">Architecture data</span>
+        <span class="badge">BI Achats</span>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px;">
+        <div>
+          <h3 style="margin:0 0 6px 0;">Contexte</h3>
+          <p>
+            Mise en place d’un Cube Achat BI : intégration des données d’achats sur plusieurs années glissantes
+            pour renforcer le pilotage (volumes, prix, fournisseurs, familles produits).
+          </p>
+
+          <h3 style="margin:14px 0 6px 0;">Problématique</h3>
+          <p>
+            Réduire les manipulations manuelles (Excel / exports) et fiabiliser l’alimentation du cube via des flux automatisés.
+          </p>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 6px 0;">Approche</h3>
+          <ul class="list">
+            <li>Récupération des données via API / SFTP (selon source)</li>
+            <li>Contrôles qualité (types, doublons, clés, périodes)</li>
+            <li>Normalisation et préparation (staging)</li>
+            <li>Alimentation du Cube BI et validation avec les métiers</li>
+          </ul>
+
+          <h3 style="margin:14px 0 6px 0;">Outils</h3>
+          <p class="muted" style="margin-bottom:0;">
+            AWS • API • ETL/ELT • SQL • Sage BI
+          </p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:16px;">
+        <b>Résultat attendu (à personnaliser)</b> : flux plus robustes, analyses achats plus fiables,
+        réduction du temps de consolidation et amélioration de la traçabilité.
+      </div>
+
+      <p class="muted" style="margin-top:12px; margin-bottom:0;">
+        ✅ À ajouter : un schéma simple (source → staging → cube → dashboards).
+      </p>
+    </section>
+
+    <!-- PROJET 3 -->
+    <section id="p3" class="card">
+      <div class="anchor-title">
+        <h2 style="margin:0;">Projet 3 — Analyse Python (Exploration & Modélisation)</h2>
+        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+      </div>
+
+      <p class="muted">Python • pandas • scikit-learn • Data viz</p>
+
+      <div>
+        <span class="badge">Python</span>
+        <span class="badge">Data Cleaning</span>
+        <span class="badge">ML (optionnel)</span>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px;">
+        <div>
+          <h3 style="margin:0 0 6px 0;">Objectif</h3>
+          <p>
+            Construire une analyse complète reproductible : nettoyage, exploration, visualisation
+            puis modélisation (si pertinent).
+          </p>
+
+          <h3 style="margin:14px 0 6px 0;">Pipeline</h3>
+          <ul class="list">
+            <li>Import + typage + gestion des valeurs manquantes</li>
+            <li>EDA : distributions, corrélations, tendances</li>
+            <li>Feature engineering (si besoin)</li>
+            <li>Modèle + évaluation + interprétation</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 6px 0;">Livrables</h3>
+          <ul class="list">
+            <li>Notebook clair (README + étapes)</li>
+            <li>Graphiques pertinents (matplotlib)</li>
+            <li>Résultats compréhensibles pour un non-tech</li>
+          </ul>
+
+          <h3 style="margin:14px 0 6px 0;">Lien GitHub</h3>
+          <p class="muted" style="margin-bottom:0;">
+            ✅ Ajoute ici l’URL de ton projet notebook quand tu l’auras (repo dédié).
+          </p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:16px;">
+        <b>Résultat attendu (à personnaliser)</b> : un projet end-to-end démontrant ta maîtrise Python (pandas),
+        et ta capacité à expliquer une analyse.
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2 style="margin-top:0;">Contact</h2>
+      <p><b>Email :</b> aimechristophedossa@gmail.com</p>
+      <p>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/aime-christophe-dossa/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/pharno1" target="_blank" rel="noopener">💻 GitHub</a>
+      </p>
+      <p class="muted" style="margin-bottom:0;">© 2026 Christophe DOSSA • Projets</p>
+    </section>
+
+    <footer>
+      Retour à l’accueil : <a href="./index.html" style="color: var(--primary); text-decoration:none; font-weight:800;">index.html</a>
+    </footer>
+
+  </main>
+</body>
+</html>
