@@ -10,20 +10,51 @@
             background-color: #f4f6f9;
             color: #333;
         }
+
+        nav {
+            background-color: #111827;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
         header {
             background-color: #1f2937;
             color: white;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
         }
+
         h2 {
             color: #1f2937;
         }
+
         .card {
             background: white;
             padding: 20px;
@@ -31,6 +62,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -41,12 +73,19 @@
 
 <body>
 
+<nav>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
     <h1>Christophe DOSSA</h1>
     <p>Data Analyst | BI & Performance | SQL • Python • Cloud</p>
+    <a class="button" href="#">Télécharger mon CV</a>
 </header>
 
-<section>
+<section id="about">
     <h2>À propos</h2>
     <div class="card">
         <p>
@@ -55,7 +94,9 @@
         Expertise en SQL, Python, Power BI et automatisation des flux via API.
         </p>
     </div>
+</section>
 
+<section id="projects">
     <h2>Projets</h2>
 
     <div class="card">
@@ -74,8 +115,19 @@
     </div>
 </section>
 
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email : aimechristophedossa@gmail.com</p>
+        <p>
+            LinkedIn : <a href="#" target="_blank">Ajouter ton lien</a><br>
+            GitHub : <a href="https://github.com/pharno1" target="_blank">github.com/pharno1</a>
+        </p>
+    </div>
+</section>
+
 <footer>
-    <p>Contact : aimechristophedossa@gmail.com</p>
+    <p>© 2026 Christophe DOSSA</p>
 </footer>
 
 </body>
