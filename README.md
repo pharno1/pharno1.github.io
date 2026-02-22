@@ -214,6 +214,9 @@
       <a class="btn btn-ghost" href="https://github.com/pharno1" target="_blank" rel="noopener">
         💻 GitHub
       </a>
+      <a class="btn btn-ghost" href="./projects.html">
+      📌 Projets détaillés
+      </a>
     </div>
   </header>
 
