@@ -119,12 +119,24 @@
     <h2>Contact</h2>
     <div class="card">
         <p>Email : aimechristophedossa@gmail.com</p>
-        <p>
-            LinkedIn : <a href="https://www.linkedin.com/in/aimé-christophe-dossa/" target="_blank" rel="noopener">
-            Voir mon profil LinkedIn
-                        </a>
-            GitHub : <a href="https://github.com/pharno1" target="_blank">github.com/pharno1</a>
-        </p>
+
+        <div style="margin-top: 20px;">
+
+            <a href="https://www.linkedin.com/in/aimé-christophe-dossa/" 
+               target="_blank" 
+               rel="noopener"
+               style="margin-right: 20px; text-decoration: none; font-weight: bold; color: #2563eb;">
+               🔗 LinkedIn
+            </a>
+
+            <a href="https://github.com/pharno1" 
+               target="_blank" 
+               rel="noopener"
+               style="text-decoration: none; font-weight: bold; color: #2563eb;">
+               💻 GitHub
+            </a>
+
+        </div>
     </div>
 </section>
 
