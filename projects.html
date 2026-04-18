@@ -166,66 +166,67 @@
   <main>
 
     <!-- PROJET 1 -->
-    <section id="p1" class="card">
-      <div class="anchor-title">
-        <h2 style="margin:0;">Projet 1 — Dashboard Performance Retail (300+ magasins)</h2>
-        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
-      </div>
+<section id="p1" class="card">
+  <div class="anchor-title">
+    <h2 style="margin:0;">Projet 1 — Dashboard Performance Retail (300+ magasins)</h2>
+    <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+  </div>
 
-      <p class="muted">Power BI • KPI • Analyse ventes • Reporting quotidien</p>
+  <p class="muted">Power BI • KPI • Analyse ventes • Reporting quotidien</p>
 
-      <div>
-        <span class="badge">BI / Reporting</span>
-        <span class="badge">Retail</span>
-        <span class="badge">Pilotage performance</span>
-      </div>
+  <div>
+    <span class="badge">BI / Reporting</span>
+    <span class="badge">Retail</span>
+    <span class="badge">Pilotage performance</span>
+  </div>
 
-      <div class="grid grid-2" style="margin-top:16px;">
-        <div>
-          <h3 style="margin:0 0 6px 0;">Contexte</h3>
-          <p>
-            Suivi quotidien de la performance commerciale d’un réseau national de 300+ magasins.
-            Besoin d’un pilotage clair et homogène pour les équipes métiers (vente / direction / contrôle de gestion).
-          </p>
-
-          <h3 style="margin:14px 0 6px 0;">Problématique</h3>
-          <p>
-            Centraliser les KPI (CA, commandes, trafic, panier moyen, taux de conversion, etc.)
-            et fournir des dashboards lisibles, actionnables et fiables.
-          </p>
-        </div>
-
-        <div>
-          <h3 style="margin:0 0 6px 0;">Approche</h3>
-          <ul class="list">
-            <li>Définition des KPI et règles de calcul (alignement métier)</li>
-            <li>Modélisation et consolidation des données (SQL / fichiers)</li>
-            <li>Création de vues Power BI : tendances, comparaison N / N-1, analyses par magasin</li>
-            <li>Mise en place d’un reporting récurrent et industrialisable</li>
-          </ul>
-
-          <h3 style="margin:14px 0 6px 0;">Outils</h3>
-          <p class="muted" style="margin-bottom:0;">
-            Power BI • SQL (PostgreSQL/MySQL) • Excel (TCD/VBA) • Looker Studio
-          </p>
-        </div>
-      </div>
-
-      <div class="callout" style="margin-top:16px;">
-        <b>Résultat attendu (à personnaliser)</b> : amélioration de la visibilité des ventes, réduction du temps de reporting,
-        meilleure réactivité des équipes sur les écarts de performance.
-      </div>
-
-      <p class="muted" style="margin-top:12px; margin-bottom:0;">
-        ✅ À ajouter : une capture Power BI (upload image dans le repo) + 2–3 KPI clés affichés.
+  <div class="grid grid-2" style="margin-top:16px;">
+    <div>
+      <h3 style="margin:0 0 6px 0;">Contexte</h3>
+      <p>
+        Suivi quotidien de la performance commerciale d’un réseau national de 300+ magasins.
+        Besoin d’un pilotage clair et homogène pour les équipes métiers (vente / direction / contrôle de gestion).
       </p>
-    </section>
-<div style="margin-top:15px;">
+
+      <h3 style="margin:14px 0 6px 0;">Problématique</h3>
+      <p>
+        Centraliser les KPI (CA, commandes, trafic, panier moyen, taux de conversion, etc.)
+        et fournir des dashboards lisibles, actionnables et fiables.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="margin:0 0 6px 0;">Approche</h3>
+      <ul class="list">
+        <li>Définition des KPI et règles de calcul (alignement métier)</li>
+        <li>Modélisation et consolidation des données (SQL / fichiers)</li>
+        <li>Création de vues de pilotage : tendances, comparaison N / N-1, analyses par magasin</li>
+        <li>Mise en place d’un reporting récurrent et industrialisable</li>
+      </ul>
+
+      <h3 style="margin:14px 0 6px 0;">Outils</h3>
+      <p class="muted" style="margin-bottom:0;">
+        Streamlit • Supabase • Python • SQL • Excel • Looker Studio
+      </p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:16px;">
+    <b>Résultat obtenu</b> : mise à disposition d’un dashboard interactif permettant de suivre les KPI clés,
+    d’identifier les magasins les plus performants, d’analyser la contribution au chiffre d’affaires
+    et d’améliorer la lisibilité du pilotage commercial.
+  </div>
+
+  <div style="display:flex; align-items:flex-start; gap:18px; margin-top:18px; flex-wrap:wrap;">
     <a href="https://dashboard-performance-retail.streamlit.app" target="_blank"
-       style="background:#0d6efd;color:white;padding:10px 15px;border-radius:8px;text-decoration:none;font-weight:bold;">
-        🚀 Voir le dashboard live
+       style="background:#0d6efd; color:white; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block;">
+      🚀 Voir le dashboard live
     </a>
-</div>
+
+    <img src="screenshot_dashboard.png" alt="Dashboard Performance Retail"
+         style="width:300px; max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.12);">
+  </div>
+</section>
     <!-- PROJET 2 -->
     <section id="p2" class="card">
       <div class="anchor-title">
@@ -353,6 +354,4 @@
 </body>
 </html>
 <div style="margin-top:20px;">
-    <img src="screenshot_dashboard.png" alt="Dashboard Retail"
-         style="width:100%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-</div>
+
