@@ -317,59 +317,75 @@
     </section>
 
     <!-- PROJET 3 -->
-    <section id="p3" class="card">
-      <div class="anchor-title">
-        <h2 style="margin:0;">Projet 3 — Analyse Python (Exploration & Modélisation)</h2>
-        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
-      </div>
+<section id="p3" class="card">
+  <div class="anchor-title">
+    <h2 style="margin:0;">Projet 3 — Analyse Python & Dashboard Streamlit Retail</h2>
+    <a class="smalllink" href="#top">↑ Haut</a>
+  </div>
 
-      <p class="muted">Python • pandas • scikit-learn • Data viz</p>
+  <p class="muted">Python • pandas • Streamlit • Data Cleaning • Retail analytics</p>
 
-      <div>
-        <span class="badge">Python</span>
-        <span class="badge">Data Cleaning</span>
-        <span class="badge">ML (optionnel)</span>
-      </div>
+  <div>
+    <span class="badge">Python</span>
+    <span class="badge">Streamlit</span>
+    <span class="badge">Data Cleaning</span>
+    <span class="badge">Analyse KPI</span>
+  </div>
 
-      <div class="grid grid-2" style="margin-top:16px;">
-        <div>
-          <h3 style="margin:0 0 6px 0;">Objectif</h3>
-          <p>
-            Construire une analyse complète reproductible : nettoyage, exploration, visualisation
-            puis modélisation (si pertinent).
-          </p>
+  <div class="grid grid-2" style="margin-top:16px;">
+    <div>
+      <h3>Objectif</h3>
+      <p>
+        Construire une analyse complète et interactive permettant de piloter la performance commerciale
+        d’un réseau retail en comparant les succursales et franchises.
+      </p>
 
-          <h3 style="margin:14px 0 6px 0;">Pipeline</h3>
-          <ul class="list">
-            <li>Import + typage + gestion des valeurs manquantes</li>
-            <li>EDA : distributions, corrélations, tendances</li>
-            <li>Feature engineering (si besoin)</li>
-            <li>Modèle + évaluation + interprétation</li>
-          </ul>
-        </div>
+      <h3>Travail réalisé</h3>
+      <ul class="list">
+        <li>Nettoyage et harmonisation de deux sources Excel hétérogènes</li>
+        <li>Traitement des dates mixtes et normalisation des colonnes</li>
+        <li>Création d’indicateurs : CA N, CA N-1, budget, croissance et réalisation budgétaire</li>
+        <li>Ajout de filtres dynamiques : date, région, enseigne, type de réseau</li>
+        <li>Analyse Top / Flop magasins et détection d’alertes business</li>
+      </ul>
+    </div>
 
-        <div>
-          <h3 style="margin:0 0 6px 0;">Livrables</h3>
-          <ul class="list">
-            <li>Notebook clair (README + étapes)</li>
-            <li>Graphiques pertinents (matplotlib)</li>
-            <li>Résultats compréhensibles pour un non-tech</li>
-          </ul>
+    <div>
+      <img src="screenshot_dashboard_p3.png"
+           alt="Dashboard Analyse Python Retail"
+           style="width:100%; border-radius:12px; margin-bottom:14px; box-shadow:0 6px 18px rgba(0,0,0,0.08);">
 
-          <h3 style="margin:14px 0 6px 0;">Lien GitHub</h3>
-          <p class="muted" style="margin-bottom:0;">
-            ✅ Ajoute ici l’URL de ton projet notebook quand tu l’auras (repo dédié).
-          </p>
-        </div>
-      </div>
+      <h3>Résultat</h3>
+      <p>
+        Le dashboard permet d’identifier rapidement les magasins performants, les zones de sous-performance
+        et les écarts entre objectif budgétaire et performance réelle.
+      </p>
 
-      <div class="callout" style="margin-top:16px;">
-        <b>Résultat attendu (à personnaliser)</b> : un projet end-to-end démontrant ta maîtrise Python (pandas),
-        et ta capacité à expliquer une analyse.
-      </div>
-    </section>
+      <h3>Liens</h3>
+      <p>
+        <a class="btn" href="https://analyse-retail.streamlit.app/" target="_blank" rel="noopener">
+          🚀 Voir l’application Streamlit
+        </a>
 
+        <a class="btn btn-ghost" href="https://github.com/pharno1/analyse-retail" target="_blank" rel="noopener">
+          💻 Voir le code GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:16px;">
+    <b>Valeur métier :</b> transformer un fichier Excel complexe en outil de pilotage interactif,
+    exploitable par des équipes métier.
+  </div>
+</section>
     <!-- CONTACT -->
+    .card img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  border:1px solid #e5e7eb;
+}
     <section id="contact" class="card">
       <h2 style="margin-top:0;">Contact</h2>
       <p><b>Email :</b> aimechristophedossa@gmail.com</p>
@@ -387,5 +403,4 @@
   </main>
 </body>
 </html>
-<div style="margin-top:20px;">
 
