@@ -36,6 +36,7 @@
       padding: 14px 16px;
       text-align:center;
     }
+
     nav a{
       color:#fff;
       text-decoration:none;
@@ -43,6 +44,7 @@
       font-weight:700;
       opacity:0.95;
     }
+
     nav a:hover{ opacity:1; text-decoration:underline; }
 
     header{
@@ -86,6 +88,7 @@
       grid-template-columns: 1fr;
       gap: 16px;
     }
+
     @media (min-width: 820px){
       .grid-2{ grid-template-columns: 1fr 1fr; }
     }
@@ -99,7 +102,9 @@
       background: var(--primary);
       color:#fff;
       margin-right: 10px;
+      margin-top: 10px;
     }
+
     .btn:hover{ opacity:0.95; }
 
     .btn-ghost{
@@ -112,6 +117,7 @@
       padding-left: 18px;
       margin: 0;
     }
+
     .list li{ margin: 6px 0; }
 
     .callout{
@@ -142,16 +148,23 @@
       font-weight: 800;
       font-size: 13px;
     }
+
     .smalllink:hover{ text-decoration:underline; }
+
+    img{
+      max-width:100%;
+      border-radius:12px;
+    }
   </style>
 </head>
 
-<body>
+<body id="top">
+
   <nav>
     <a href="./index.html">← Accueil</a>
     <a href="#p1">Retail BI</a>
     <a href="#p2">API → Cube BI</a>
-    <a href="#p3">Python</a>
+    <a href="#p3">Python / Streamlit</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -169,7 +182,7 @@
     <section id="p1" class="card">
       <div class="anchor-title">
         <h2 style="margin:0;">Projet 1 — Dashboard Performance Retail (300+ magasins)</h2>
-        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+        <a class="smalllink" href="#top">↑ Haut</a>
       </div>
 
       <p class="muted">Power BI • KPI • Analyse ventes • Reporting quotidien</p>
@@ -182,54 +195,46 @@
 
       <div class="grid grid-2" style="margin-top:16px;">
         <div>
-          <h3 style="margin:0 0 6px 0;">Contexte</h3>
+          <h3>Contexte</h3>
           <p>
             Suivi quotidien de la performance commerciale d’un réseau national de 300+ magasins.
-            Besoin d’un pilotage clair et homogène pour les équipes métiers (vente / direction / contrôle de gestion).
+            Besoin d’un pilotage clair et homogène pour les équipes métiers.
           </p>
 
-          <h3 style="margin:14px 0 6px 0;">Problématique</h3>
+          <h3>Problématique</h3>
           <p>
-            Centraliser les KPI (CA, commandes, trafic, panier moyen, taux de conversion, etc.)
-            et fournir des dashboards lisibles, actionnables et fiables.
+            Centraliser les KPI et fournir des dashboards lisibles, actionnables et fiables.
           </p>
         </div>
 
         <div>
-          <h3 style="margin:0 0 6px 0;">Approche</h3>
+          <h3>Approche</h3>
           <ul class="list">
-            <li>Définition des KPI et règles de calcul (alignement métier)</li>
-            <li>Modélisation et consolidation des données (SQL / fichiers)</li>
-            <li>Création de vues Power BI : tendances, comparaison N / N-1, analyses par magasin</li>
-            <li>Mise en place d’un reporting récurrent et industrialisable</li>
+            <li>Définition des KPI et règles de calcul</li>
+            <li>Modélisation et consolidation des données</li>
+            <li>Création de vues Power BI et reporting récurrent</li>
+            <li>Analyse des tendances, écarts N/N-1 et performance magasin</li>
           </ul>
 
-          <h3 style="margin:14px 0 6px 0;">Outils</h3>
-          <p class="muted" style="margin-bottom:0;">
-            Supabase (DataWarehouse) • VS Code • SQL (PostgreSQL/MySQL) • Excel (TCD/VBA) • Streamlit
+          <h3>Outils</h3>
+          <p class="muted">
+            Supabase • SQL • Excel • Power BI • Streamlit
           </p>
         </div>
       </div>
 
       <div class="callout" style="margin-top:16px;">
-        <b>Résultat attendu </b> : amélioration de la visibilité des ventes, réduction du temps de reporting,
-        meilleure réactivité des équipes sur les écarts de performance.
+        <b>Résultat :</b> amélioration de la visibilité des ventes, réduction du temps de reporting et meilleure réactivité sur les écarts de performance.
       </div>
 
-      <p class="muted" style="margin-top:12px; margin-bottom:0;">
-      </p>
+      <a class="btn" href="https://dashboard-performance-retail.streamlit.app/" target="_blank" rel="noopener">🚀 Voir le dashboard live</a>
     </section>
-<div style="margin-top:15px;">
-    <a href="https://dashboard-performance-retail.streamlit.app" target="_blank"
-       style="background:#0d6efd;color:white;padding:10px 15px;border-radius:8px;text-decoration:none;font-weight:bold;">
-        🚀 Voir le dashboard live
-    </a>
-</div>
+
     <!-- PROJET 2 -->
     <section id="p2" class="card">
       <div class="anchor-title">
         <h2 style="margin:0;">Projet 2 — Automatisation API → Cube BI (Achats fleurs)</h2>
-        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+        <a class="smalllink" href="#top">↑ Haut</a>
       </div>
 
       <p class="muted">API • ETL/ELT • AWS • Sage BI • Data quality</p>
@@ -242,94 +247,92 @@
 
       <div class="grid grid-2" style="margin-top:16px;">
         <div>
-          <h3 style="margin:0 0 6px 0;">Contexte</h3>
+          <h3>Contexte</h3>
           <p>
             Mise en place d’un Cube Achat BI : intégration des données d’achats sur plusieurs années glissantes
-            pour renforcer le pilotage (volumes, prix, fournisseurs, familles produits).
+            pour renforcer le pilotage des volumes, prix, fournisseurs et familles produits.
           </p>
 
-          <h3 style="margin:14px 0 6px 0;">Problématique</h3>
+          <h3>Problématique</h3>
           <p>
-            Réduire les manipulations manuelles (Excel / exports) et fiabiliser l’alimentation du cube via des flux automatisés.
+            Réduire les manipulations manuelles et fiabiliser l’alimentation du cube via des flux automatisés.
           </p>
         </div>
 
         <div>
-          <h3 style="margin:0 0 6px 0;">Approche</h3>
+          <h3>Approche</h3>
           <ul class="list">
-            <li>Récupération des données via API / SFTP (selon source)</li>
-            <li>Contrôles qualité (types, doublons, clés, périodes)</li>
-            <li>Normalisation et préparation (staging)</li>
-            <li>Alimentation du Cube BI et validation avec les métiers</li>
+            <li>Récupération des données via API / SFTP</li>
+            <li>Contrôles qualité : types, doublons, clés, périodes</li>
+            <li>Normalisation et préparation en staging</li>
+            <li>Alimentation du Cube BI et validation métier</li>
           </ul>
 
-          <h3 style="margin:14px 0 6px 0;">Outils</h3>
-          <p class="muted" style="margin-bottom:0;">
+          <h3>Outils</h3>
+          <p class="muted">
             AWS • API • ETL/ELT • SQL • Sage BI
           </p>
         </div>
       </div>
 
       <div class="callout" style="margin-top:16px;">
-        <b>Résultat attendu (à personnaliser)</b> : flux plus robustes, analyses achats plus fiables,
-        réduction du temps de consolidation et amélioration de la traçabilité.
+        <b>Résultat attendu :</b> flux plus robustes, analyses achats plus fiables, réduction du temps de consolidation et amélioration de la traçabilité.
       </div>
-
-      <p class="muted" style="margin-top:12px; margin-bottom:0;">
-        ✅ À ajouter : un schéma simple (source → staging → cube → dashboards).
-      </p>
     </section>
 
     <!-- PROJET 3 -->
     <section id="p3" class="card">
       <div class="anchor-title">
-        <h2 style="margin:0;">Projet 3 — Analyse Python (Exploration & Modélisation)</h2>
-        <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
+        <h2 style="margin:0;">Projet 3 — Analyse Python & Dashboard Streamlit Retail</h2>
+        <a class="smalllink" href="#top">↑ Haut</a>
       </div>
 
-      <p class="muted">Python • pandas • scikit-learn • Data viz</p>
+      <p class="muted">Python • pandas • Streamlit • Data Cleaning • Retail analytics</p>
 
       <div>
         <span class="badge">Python</span>
+        <span class="badge">Streamlit</span>
         <span class="badge">Data Cleaning</span>
-        <span class="badge">ML (optionnel)</span>
+        <span class="badge">Analyse KPI</span>
       </div>
 
       <div class="grid grid-2" style="margin-top:16px;">
         <div>
-          <h3 style="margin:0 0 6px 0;">Objectif</h3>
+          <h3>Objectif</h3>
           <p>
-            Construire une analyse complète reproductible : nettoyage, exploration, visualisation
-            puis modélisation (si pertinent).
+            Construire une analyse complète et interactive permettant de piloter la performance commerciale
+            d’un réseau retail en comparant les succursales et franchises.
           </p>
 
-          <h3 style="margin:14px 0 6px 0;">Pipeline</h3>
+          <h3>Travail réalisé</h3>
           <ul class="list">
-            <li>Import + typage + gestion des valeurs manquantes</li>
-            <li>EDA : distributions, corrélations, tendances</li>
-            <li>Feature engineering (si besoin)</li>
-            <li>Modèle + évaluation + interprétation</li>
+            <li>Nettoyage et harmonisation de deux sources Excel hétérogènes</li>
+            <li>Traitement des dates mixtes et normalisation des colonnes</li>
+            <li>Création d’indicateurs : CA N, CA N-1, budget, croissance et réalisation budgétaire</li>
+            <li>Ajout de filtres dynamiques : date, région, enseigne, type de réseau</li>
+            <li>Analyse Top / Flop magasins et détection d’alertes business</li>
           </ul>
         </div>
 
         <div>
-          <h3 style="margin:0 0 6px 0;">Livrables</h3>
-          <ul class="list">
-            <li>Notebook clair (README + étapes)</li>
-            <li>Graphiques pertinents (matplotlib)</li>
-            <li>Résultats compréhensibles pour un non-tech</li>
-          </ul>
+          <h3>Résultat</h3>
+          <p>
+            Le dashboard permet d’identifier rapidement les magasins performants, les zones de sous-performance
+            et les écarts entre objectif budgétaire et performance réelle.
+          </p>
 
-          <h3 style="margin:14px 0 6px 0;">Lien GitHub</h3>
-          <p class="muted" style="margin-bottom:0;">
-            ✅ Ajoute ici l’URL de ton projet notebook quand tu l’auras (repo dédié).
+          <img src="screenshot_dashboard.png" alt="Capture dashboard Streamlit" style="margin:8px 0 14px;">
+
+          <h3>Liens</h3>
+          <p>
+            <a class="btn" href="https://analyse-retail.streamlit.app/" target="_blank" rel="noopener">🚀 Voir l’application Streamlit</a>
+            <a class="btn btn-ghost" href="https://github.com/pharno1/analyse-retail" target="_blank" rel="noopener">💻 Voir le code GitHub</a>
           </p>
         </div>
       </div>
 
       <div class="callout" style="margin-top:16px;">
-        <b>Résultat attendu (à personnaliser)</b> : un projet end-to-end démontrant ta maîtrise Python (pandas),
-        et ta capacité à expliquer une analyse.
+        <b>Valeur métier :</b> transformer un fichier Excel complexe en outil de pilotage interactif, exploitable par des équipes métier.
       </div>
     </section>
 
@@ -345,123 +348,10 @@
     </section>
 
     <footer>
-      Retour à l’accueil : <a href="./index.html" style="color: var(--primary); text-decoration:none; font-weight:800;">index.html</a>
+      Retour à l’accueil :
+      <a href="./index.html" style="color: var(--primary); text-decoration:none; font-weight:800;">index.html</a>
     </footer>
 
   </main>
 </body>
 </html>
-<div style="margin-top:20px;">
-
-  <section id="p2" class="card">
-  <div class="anchor-title">
-    <h2 style="margin:0;">Projet 2 — Dashboard Performance Retail</h2>
-    <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
-  </div>
-
-  <p class="muted">Python • Streamlit • pandas • Data viz • Retail analytics</p>
-
-  <div>
-    <span class="badge">Streamlit</span>
-    <span class="badge">Python</span>
-    <span class="badge">Retail</span>
-    <span class="badge">Analyse KPI</span>
-  </div>
-
-  <div class="grid grid-2" style="margin-top:16px;">
-    <div>
-      <h3>🎯 Objectif</h3>
-      <p>
-        Développer une application interactive permettant de piloter la performance commerciale
-        d’un réseau retail, en comparant les succursales et franchises à travers le chiffre d’affaires,
-        le budget, la croissance N/N-1 et les alertes business.
-      </p>
-
-      <h3>🧠 Travail réalisé</h3>
-      <ul>
-        <li>Nettoyage et harmonisation de deux sources Excel hétérogènes.</li>
-        <li>Création d’indicateurs de performance : CA N, CA N-1, budget, croissance, réalisation budgétaire.</li>
-        <li>Ajout de filtres dynamiques : date, région, enseigne, type de réseau.</li>
-        <li>Analyse Top/Flop magasins et détection d’alertes business.</li>
-        <li>Déploiement de l’application sur Streamlit Cloud.</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>📊 Résultat</h3>
-      <p>
-        Le dashboard permet d’identifier rapidement les magasins performants, les zones de sous-performance
-        et les écarts entre objectif budgétaire et performance réelle.
-      </p>
-
-      <h3>🔗 Liens</h3>
-      <p>
-        <a href="https://analyse-retail.streamlit.app" target="_blank">🚀 Voir l'application Streamlit</a><br>
-        <a href="https://github.com/pharno1/analyse-retail" target="_blank">💻 Voir le code GitHub</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-  <section class="card">
-  <div class="anchor-title">
-    <h2 style="margin:0;">Projet 2 — Dashboard Performance Retail</h2>
-    <a class="smalllink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Haut</a>
-  </div>
-
-  <p class="muted">
-    Python • Streamlit • Analyse KPI • Retail Analytics
-  </p>
-
-  <div>
-    <span class="badge">Python</span>
-    <span class="badge">Streamlit</span>
-    <span class="badge">Retail</span>
-    <span class="badge">Data Analysis</span>
-  </div>
-
-  <div class="grid grid-2" style="margin-top:16px;">
-
-    <div>
-      <h3>🎯 Objectif</h3>
-      <p>
-        Développer une application interactive de pilotage de performance commerciale
-        permettant d’analyser les écarts entre succursales et franchises à travers
-        le chiffre d’affaires, le budget et la croissance.
-      </p>
-
-      <h3>🧠 Travail réalisé</h3>
-      <ul>
-        <li>Nettoyage et harmonisation de données multi-sources Excel</li>
-        <li>Création d’indicateurs KPI : CA, croissance, réalisation budget</li>
-        <li>Analyse Top / Flop magasins</li>
-        <li>Détection des alertes business</li>
-        <li>Déploiement Streamlit Cloud</li>
-      </ul>
-    </div>
-
-    <div>
-
-      <img src="screenshot_dashboard.png"
-           style="width:100%; border-radius:12px; margin-bottom:12px;">
-
-      <h3>🔗 Liens</h3>
-
-      <p>
-        <a href="https://analyse-retail.streamlit.app/"
-           target="_blank">
-           🚀 Voir l'application
-        </a>
-      </p>
-
-      <p>
-        <a href="https://github.com/pharno1/analyse-retail"
-           target="_blank">
-           💻 Voir le code GitHub
-        </a>
-      </p>
-
-    </div>
-
-  </div>
-</section>
