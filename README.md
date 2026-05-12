@@ -291,7 +291,8 @@
           <h3 class="project-title">Dashboard Performance Retail</h3>
           <p class="project-meta">Power BI • KPI • Pilotage ventes</p>
           <p>Suivi des ventes et indicateurs clés pour un réseau de 300+ magasins : vues décisionnelles, analyse des écarts et monitoring quotidien.</p>
-          <p class="muted" style="margin:0;">(Ajoute ensuite une capture Power BI + un lien vers une page projet)</p>
+          <p class="muted" style="margin:0;"> <img src="screenshot_dashboard_process.png"
+     style="width:100%; border-radius:14px; margin-top:18px;"></p>
         </div>
 
         <div class="card">
@@ -305,7 +306,8 @@
           <h3 class="project-title">Analyse Python & Modélisation</h3>
           <p class="project-meta">Python • pandas • scikit-learn</p>
           <p>Nettoyage, exploration, visualisation et modélisation sur dataset : pipeline simple et reproductible, avec résultats interprétables.</p>
-          <p class="muted" style="margin:0;">(Ajoute un lien GitHub vers le notebook)</p>
+          <p class="muted" style="margin:0;"><img src="screenshot_dashboard_p3_process.png"
+     style="width:100%; border-radius:14px; margin-top:18px;"></p>
         </div>
       </div>
     </section>
