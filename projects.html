@@ -235,54 +235,86 @@
     
 
     <!-- PROJET 2 -->
-    <section id="p2" class="card">
-      <div class="anchor-title">
-        <h2 style="margin:0;">Projet 2 — Automatisation API → Cube BI (Achats fleurs)</h2>
-        <a class="smalllink" href="#top">↑ Haut</a>
-      </div>
+<section id="p2" class="card">
+  <div class="anchor-title">
+    <h2 style="margin:0;">Projet 2 — Automatisation API → Cube BI Achats</h2>
+    <a class="smalllink" href="#top">↑ Haut</a>
+  </div>
 
-      <p class="muted">API • ETL/ELT • AWS • Sage BI • Data quality</p>
+  <p class="muted">FastAPI • Python • ETL • Supabase • Streamlit • Data Warehouse</p>
 
-      <div>
-        <span class="badge">Automatisation</span>
-        <span class="badge">Architecture data</span>
-        <span class="badge">BI Achats</span>
-      </div>
+  <div>
+    <span class="badge">API REST</span>
+    <span class="badge">ETL Python</span>
+    <span class="badge">Supabase</span>
+    <span class="badge">Cube BI</span>
+    <span class="badge">Dashboard Achats</span>
+  </div>
 
-      <div class="grid grid-2" style="margin-top:16px;">
-        <div>
-          <h3>Contexte</h3>
-          <p>
-            Mise en place d’un Cube Achat BI : intégration des données d’achats sur plusieurs années glissantes
-            pour renforcer le pilotage des volumes, prix, fournisseurs et familles produits.
-          </p>
+  <div class="grid grid-2" style="margin-top:16px;">
+    <div>
+      <h3>Contexte</h3>
+      <p>
+        Projet inspiré d’un cas réel en environnement retail : automatiser l’intégration
+        des données achats issues d’un fichier métier afin d’alimenter un modèle décisionnel
+        de type Cube BI.
+      </p>
 
-          <h3>Problématique</h3>
-          <p>
-            Réduire les manipulations manuelles et fiabiliser l’alimentation du cube via des flux automatisés.
-          </p>
-        </div>
+      <h3>Objectif</h3>
+      <p>
+        Réduire les traitements manuels, fiabiliser les données achats et créer un flux
+        semi-automatisé allant de la source Excel jusqu’au dashboard décisionnel.
+      </p>
 
-        <div>
-          <h3>Approche</h3>
-          <ul class="list">
-            <li>Récupération des données via API / SFTP</li>
-            <li>Contrôles qualité : types, doublons, clés, périodes</li>
-            <li>Normalisation et préparation en staging</li>
-            <li>Alimentation du Cube BI et validation métier</li>
-          </ul>
+      <h3>Pipeline réalisé</h3>
+      <ul class="list">
+        <li>Stockage local du fichier source BI Achats</li>
+        <li>Nettoyage et normalisation des données avec Python / pandas</li>
+        <li>Création d’une API REST avec FastAPI</li>
+        <li>Modélisation d’un schéma en étoile : faits + dimensions</li>
+        <li>Chargement des données dans Supabase / PostgreSQL</li>
+        <li>Création d’un dashboard Streamlit connecté au Data Warehouse</li>
+      </ul>
+    </div>
 
-          <h3>Outils</h3>
-          <p class="muted">
-            AWS • API • ETL/ELT • SQL • Sage BI
-          </p>
-        </div>
-      </div>
+    <div>
+      <h3>Résultat</h3>
+      <p>
+        Le projet permet de suivre les montants d’achats, les fournisseurs clés,
+        les magasins concernés, les familles produits, les marges estimées et la qualité
+        des données.
+      </p>
 
-      <div class="callout" style="margin-top:16px;">
-        <b>Résultat attendu :</b> flux plus robustes, analyses achats plus fiables, réduction du temps de consolidation et amélioration de la traçabilité.
-      </div>
-    </section>
+      <h3>Architecture</h3>
+      <p class="muted">
+        Excel → ETL Python → API FastAPI → Supabase → Cube BI → Streamlit
+      </p>
+
+      <h3>Liens</h3>
+      <p>
+        <a class="btn"
+           href="https://cube-bi-achats.streamlit.app/"
+           target="_blank"
+           rel="noopener">
+           🚀 Voir le dashboard
+        </a>
+
+        <a class="btn btn-ghost"
+           href="https://github.com/pharno1/cube-bi-achats"
+           target="_blank"
+           rel="noopener">
+           💻 Voir le code GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:16px;">
+    <b>Valeur métier :</b>
+    transformation d’un fichier Excel achats en flux BI structuré, traçable et exploitable
+    pour le pilotage décisionnel.
+  </div>
+</section>
 
     <!-- PROJET 3 -->
     <section id="p3" class="card">
