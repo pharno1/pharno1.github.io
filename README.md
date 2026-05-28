@@ -385,7 +385,45 @@
           </div>
 
         </div>
+        
+<!-- PROJET 2 -->
+<div class="card" style="margin-top:22px;">
 
+  <h3 class="project-title">
+    
+    Projet 2 — Automatisation API → Cube BI Achats
+  </h3>
+
+  <p class="project-meta">
+    Python • FastAPI • ETL • Supabase • PostgreSQL • Streamlit
+  </p>
+
+  <p>
+    Automatisation d’un flux de données achats depuis un fichier Excel vers un modèle décisionnel
+    de type Cube BI, avec API REST, Data Warehouse Supabase et dashboard Streamlit.
+  </p>
+
+  <img src="screenshot_dashboard_p2_process.png"
+       alt="Projet API Cube BI Achats"
+       class="project-image">
+
+  <div class="project-links">
+
+    <a class="link-btn"
+       href="https://cube-bi-achats.streamlit.app/"
+       target="_blank">
+      🚀 Dashboard live
+    </a>
+
+    <a class="link-btn"
+       href="https://github.com/pharno1/cube-bi-achats"
+       target="_blank">
+      💻 Code GitHub
+    </a>
+
+  </div>
+
+</div>
         <!-- PROJET 3 -->
         <div class="card">
 
@@ -423,24 +461,6 @@
           </div>
 
         </div>
-
-      </div>
-
-      <!-- PROJET 2 -->
-      <div class="card" style="margin-top:22px;">
-
-        <h3 class="project-title">
-          Projet 2 — Automatisation API → Cube BI
-        </h3>
-
-        <p class="project-meta">
-          API • ETL/ELT • AWS • Sage BI
-        </p>
-
-        <p>
-          Automatisation et fiabilisation des flux achats pour alimenter
-          un cube BI destiné au pilotage métier et à l’analyse fournisseurs.
-        </p>
 
       </div>
 
