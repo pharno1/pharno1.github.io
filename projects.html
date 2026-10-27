@@ -165,6 +165,7 @@
     <a href="#p1">Retail BI</a>
     <a href="#p2">API → Cube BI</a>
     <a href="#p3">Python / Streamlit</a>
+    <a href="#p4">Données de santé</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -371,6 +372,49 @@
 
       <div class="callout" style="margin-top:16px;">
         <b>Valeur métier :</b> transformer un fichier Excel complexe en outil de pilotage interactif, exploitable par des équipes métier.
+      </div>
+    </section>
+
+    <!-- PROJET 4 -->
+    <section id="p4" class="card">
+      <div class="anchor-title">
+        <h2 style="margin:0;">Projet 4 — Données de santé synthétiques : préparation et contrôle qualité</h2>
+        <a class="smalllink" href="#top">↑ Haut</a>
+      </div>
+      <p class="muted">R • SNDS • PMSI-MCO • Qualité des données</p>
+      <div>
+        <span class="badge">R</span>
+        <span class="badge">Données de santé</span>
+        <span class="badge">Jointures</span>
+        <span class="badge">Données synthétiques</span>
+      </div>
+      <div class="grid grid-2" style="margin-top:16px;">
+        <div>
+          <h3>Objectif</h3>
+          <p>Explorer des tables synthétiques structurées selon le modèle de la base principale du SNDS et préparer une base patient-séjour pour illustrer les contrôles précédant une analyse.</p>
+          <h3>Démarche</h3>
+          <ul class="list">
+            <li>Importation des tables bénéficiaires, séjours, chaînage et diagnostics associés</li>
+            <li>Contrôle des clés, de leur unicité et des correspondances entre tables</li>
+            <li>Jointures documentées et vérification du nombre de lignes</li>
+            <li>Contrôles chronologiques et comparaison de durées sous R</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Résultats sur le jeu fictif</h3>
+          <p>La base construite comporte 251 lignes. Parmi elles, 98 ont une année d’entrée antérieure à l’année de naissance et 251 présentent une durée renseignée différente de l’écart entre les dates.</p>
+          <h3>Présentation du projet</h3>
+          <img src="projet_snds_visuel.png" alt="Étapes du projet sur les données de santé synthétiques">
+          <h3>Graphique des contrôles</h3>
+          <img src="graphique_snds.png" alt="Graphique : 39 % des années d’entrée avant l’année de naissance et 100 % des durées différentes, sur 251 séjours fictifs">
+          <p class="muted">Données fictives : 251 séjours ; les dates et les durées n’ont pas de cohérence médicale garantie.</p>
+          <a class="btn btn-ghost" href="./projet_snds.R">Télécharger le script R</a>
+          <h3>Source</h3>
+          <p><a href="https://www.data.gouv.fr/datasets/donnees-synthetiques-de-la-base-principales-du-systeme-national-des-donnees-de-sante" target="_blank" rel="noopener">Données synthétiques du SNDS — Health Data Hub</a></p>
+        </div>
+      </div>
+      <div class="callout" style="margin-top:16px;">
+        <b>Limites :</b> données fictives sans cohérence médicale ou statistique garantie. Ces résultats illustrent des contrôles techniques et ne décrivent pas les données réelles du SNDS.
       </div>
     </section>
 
