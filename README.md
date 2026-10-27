@@ -462,6 +462,18 @@
 
         </div>
 
+        <!-- PROJET 4 -->
+        <div class="card">
+          <h3 class="project-title">Projet 4 — Données de santé synthétiques</h3>
+          <p class="project-meta">R • SNDS • PMSI-MCO • Qualité des données</p>
+          <p>Préparation d’une base patient-séjour et contrôles de cohérence à partir de données synthétiques.</p>
+          <img src="projet_snds_visuel.png" alt="Étapes du projet de données de santé synthétiques" class="project-image">
+          <div class="project-links">
+            <a class="link-btn" href="./projects.html#p4">📊 Voir le projet</a>
+            <a class="link-btn" href="./projet_snds.R">💻 Script R</a>
+          </div>
+        </div>
+
       </div>
 
     </section>
