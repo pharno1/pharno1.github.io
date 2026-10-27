@@ -470,7 +470,7 @@
           <img src="projet_snds_visuel.png" alt="Étapes du projet de données de santé synthétiques" class="project-image">
           <div class="project-links">
             <a class="link-btn" href="./projects.html#p4">📊 Voir le projet</a>
-            <a class="link-btn" href="./projet_snds.R">💻 Script R</a>
+            <a class="link-btn" href="https://github.com/pharno1" target="_blank" rel="noopener">💻 Code GitHub</a>
           </div>
         </div>
 
